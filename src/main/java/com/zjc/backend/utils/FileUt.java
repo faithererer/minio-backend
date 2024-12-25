@@ -59,7 +59,7 @@ public class FileUt {
 //                        .filename("F:\\a\\5036\\game\\game\\HEN\\MEIMEIBEIFUSHEN\\【手机扫码进入】.png")
 //                        .build());
 
-        return "ok6";
+        return "ok76";
     }
 
 }
