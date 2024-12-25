@@ -1,0 +1,21 @@
+spring.application.name: backend
+
+server:
+  port: 8081
+spring:
+  # 配置文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+
+minio:
+  host: https://play.min.io
+  url: ${minio.host}/${minio.bucket}/
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket: public1
+
+
+
+
