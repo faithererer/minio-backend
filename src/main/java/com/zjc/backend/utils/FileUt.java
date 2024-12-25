@@ -38,28 +38,28 @@ public class FileUt {
     @GetMapping("/6")
     public String getUrl(String filename) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
 
-        MinioClient minioClient = MinioClient.builder()
-                .endpoint(host)
-                .credentials(accessKey, secretKey)
-                .build();
+//        MinioClient minioClient = MinioClient.builder()
+//                .endpoint(host)
+//                .credentials(accessKey, secretKey)
+//                .build();
+//
+//        boolean found =
+//                minioClient.bucketExists(BucketExistsArgs.builder().bucket("zjc").build());
+//        if (!found) {
+//            // Make a new bucket called 'zjc'.
+//            minioClient.makeBucket(MakeBucketArgs.builder().bucket("zjc").build());
+//        } else {
+//            System.out.println("Bucket 'zjc' already exists.");
+//        }
+//
+//        minioClient.uploadObject(
+//                UploadObjectArgs.builder()
+//                        .bucket("zjc")
+//                        .object("zjc-2015.jpeg")
+//                        .filename("F:\\a\\5036\\game\\game\\HEN\\MEIMEIBEIFUSHEN\\【手机扫码进入】.png")
+//                        .build());
 
-        boolean found =
-                minioClient.bucketExists(BucketExistsArgs.builder().bucket("zjc").build());
-        if (!found) {
-            // Make a new bucket called 'zjc'.
-            minioClient.makeBucket(MakeBucketArgs.builder().bucket("zjc").build());
-        } else {
-            System.out.println("Bucket 'zjc' already exists.");
-        }
-
-        minioClient.uploadObject(
-                UploadObjectArgs.builder()
-                        .bucket("zjc")
-                        .object("zjc-2015.jpeg")
-                        .filename("F:\\a\\5036\\game\\game\\HEN\\MEIMEIBEIFUSHEN\\【手机扫码进入】.png")
-                        .build());
-
-        return "ok";
+        return "ok6";
     }
 
 }
